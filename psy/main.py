@@ -21,7 +21,7 @@ def shuffle_letters(fname: str):
 
     # init a list of lines to place the new lines with shuffled words
     mixed_lines = []
-    # iterate over ever line
+    # iterate over every line
     for line in lines:
         # init a list of words for each line
         mixed_line = []
@@ -34,7 +34,7 @@ def shuffle_letters(fname: str):
             # with `shuffle` the list gets shuffled, inplace, thus no need to get the output
             random.shuffle(sub_word)
 
-            # join the first, shuffled and last word
+            # join the first, shuffled and last character of a word
             new_word = word[0] + ''.join(sub_word) + word[-1]
 
             # append new word to `mixed_line`
